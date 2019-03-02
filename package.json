@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^11.10.0",
     "codebase-npm": "file:../codebase-npm",
+    "dotenv": "^6.2.0",
     "tslint": "^5.13.0"
   },
   "devDependencies": {

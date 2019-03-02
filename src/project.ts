@@ -1,7 +1,14 @@
-import codebase, { TimeSession, Project, Ticket, User } from 'codebase-npm';
+import codebase from 'codebase-npm';
 
-let codebaseConnection = new codebase('<hidden>', '<hidden>', '');
+require('dotenv').config();
 
-codebaseConnection.projects().then((projects) => {
-    console.log(projects.getActive());
+let user = process.env.API_USER;
+let key = process.env.API_KEY;
+
+let codebaseConnection = new codebase(user!, key!, '');
+
+codebaseConnection.projects().then((projects: any) => {
+    let sorted = projects.sortBy('id');
+
+    console.log(sorted.pluck('id').all());
 })
