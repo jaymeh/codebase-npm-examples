@@ -7,8 +7,7 @@ let key = process.env.API_KEY;
 
 let codebaseConnection = new codebase(user!, key!, '');
 
-codebaseConnection.projects().then((projects: any) => {
-    let sorted = projects.sortBy('id');
-
-    console.log(sorted.pluck('id').all());
+codebaseConnection.users().then((users: any) => {
+    let sorted = users.sortBy('emailAddress');
+    console.log(sorted.pluck('emailAddress').all());
 })
