@@ -1,4 +1,4 @@
-import codebase, { Day, Week, Month, All } from 'codebase-npm';
+import { codebase, Day, Week, Month, All } from 'codebase-npm';
 
 require('dotenv').config();
 

@@ -1,4 +1,4 @@
-import codebase, { TimeSession, Project, Ticket, User } from 'codebase-npm';
+import { codebase, TimeSession, Project, Ticket, User } from 'codebase-npm';
 
 let codebaseConnection = new codebase('<hidden>', '<hidden>', '');
 let project = new Project(1, 'project', 'active', '/project', 1, 1, 0);

@@ -1,4 +1,4 @@
-import codebase from 'codebase-npm';
+import { codebase } from 'codebase-npm';
 
 require('dotenv').config();
 
