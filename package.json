@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^11.10.0",
-    "codebase-npm": "file:../codebase-npm",
+    "codebase-npm": "^1.0.3",
     "dotenv": "^6.2.0",
     "tslint": "^5.13.0"
   },
